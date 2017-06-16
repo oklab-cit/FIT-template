@@ -1,0 +1,30 @@
+\makeatletter
+\def\section{\@startsection{section}{1}{\z@}%
+  {.6\Cvs}%
+  {.3\Cvs}%
+  {\reset@font\fontsize{10.5pt}{0pt}\bfseries}}
+\def\subsection{\@startsection{subsection}{2}{\z@}%
+  {.6\Cvs}%
+  {.3\Cvs}%
+  {\reset@font\fontsize{10.5pt}{0pt}\bfseries}}
+\def\@seccntformat#1{\csname the#1\endcsname.}
+\def\thefootnote{\fnsymbol{footnote}}
+\makeatother
+
+\def\baselinestretch{0.83}
+
+\setlength{\oddsidemargin}{20mm}
+\setlength{\evensidemargin}{20mm}
+\addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-1in}
+\setlength{\textwidth}{170mm}
+\setlength{\topmargin}{30mm}
+\addtolength{\topmargin}{-1in}
+\setlength{\headheight}{0mm}
+\setlength{\headsep}{0mm}
+\setlength{\textheight}{242mm}
+\setlength{\columnsep}{7mm}
+
+\date{\empty}
+\pagestyle{empty}
+\thispagestyle{empty}

@@ -1,0 +1,44 @@
+\documentclass[uplatex,twocolumn]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{float,nidanfloat,enumerate,amsmath,amssymb,booktabs}
+\bibliographystyle{junsrt}
+\input{layout}
+
+% define my command
+\def\vector#1{\mbox{\boldmath $#1$}}
+\DeclareMathOperator*{\argmin}{argmin}
+
+\begin{document}
+% make a title
+\twocolumn[%
+  \begin{center}
+    {\Large タイトル}\vspace{.5ex}
+
+    {\Large\sffamily Title}\vspace{1ex}
+
+    \large
+    \mbox{}
+    \hfil
+    \setcounter{footnote}{2}
+    {\bfseries 著者1}${}^\thefootnote$
+    \hfil
+    \setcounter{footnote}{2}
+    {\bfseries 著者2}${}^\thefootnote$
+    \hfil
+    \mbox{}
+
+    \mbox{}
+    \hfil
+    {\sffamily Author1}
+    \hfil
+    {\sffamily Author2}
+    \hfil
+    \mbox{}
+    \hfil
+  \end{center}
+]
+\setcounter{footnote}{2}
+\footnotetext{所属}
+
+\input{src/01_background.tex}
+\end{document}
